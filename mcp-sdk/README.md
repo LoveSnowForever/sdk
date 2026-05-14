@@ -23,7 +23,7 @@
 
 ```xml
 <dependency>
-    <groupId>com.alipay.sdk</groupId>
+    <groupId>io.github.antopen</groupId>
     <artifactId>alipay-mcp-sdk</artifactId>
     <version>1.0.0</version>
 </dependency>

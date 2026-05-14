@@ -35,9 +35,9 @@ mvn install -DskipTests
 
 <dependencies>
     <dependency>
-        <groupId>com.alipay.sdk</groupId>
+        <groupId>io.github.antopen</groupId>
         <artifactId>alipay-spring-ai-mcp-starter</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </dependency>
 </dependencies>
 
@@ -76,9 +76,9 @@ mvn install -DskipTests
 <dependencies>
     <!-- 支付宝 MCP Starter -->
     <dependency>
-        <groupId>com.alipay.sdk</groupId>
+        <groupId>io.github.antopen</groupId>
         <artifactId>alipay-spring-ai-mcp-starter</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </dependency>
 
     <!-- Spring AI MCP Client（如需 Spring AI 集成） -->
