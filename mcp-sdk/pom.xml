@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.alipay.sdk</groupId>
+    <groupId>io.github.antopen</groupId>
     <artifactId>alipay-mcp-sdk</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
@@ -166,25 +166,17 @@
                 </executions>
             </plugin>
 
-            <!-- Nexus Staging 插件 -->
+            <!-- Nexus Publishing 插件 (使用中央发布 API) -->
             <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.13</version>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.7.0</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <serverId>central</serverId>
-                    <nexusUrl>https://central.sonatype.com/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>central</id>
-            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
-        </repository>
-    </distributionManagement>
 </project>
